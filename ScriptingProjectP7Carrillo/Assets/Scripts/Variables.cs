@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -6,15 +7,20 @@ using UnityEngine;
 public class Variables : MonoBehaviour
 {
     int myInt = 5;
-    // Start is called before the first frame update
+    private int number;
+
     void Start()
     {
         myInt = MultiplyByTwo(myInt);
         Debug.Log(myInt);
     }
 
-    // Update is called once per frame
-    void Update()
+    private int MultiplyByTwo(int myInt)
+    {
+        throw new NotImplementedException();
+    }
+
+    int Update()
     {
         int result;
         result = number * 2;
